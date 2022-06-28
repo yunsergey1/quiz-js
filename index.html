@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz App</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!-- СТАРТОВАЯ КНОПКА "НАЧАТЬ QUIZ" -->
+	<div class="start__btn">
+		<button>Начать QUIZ</button>
+	</div>
+
+	<!-- ПРАВИЛА ИГРЫ -->
+	<div class="info__box">
+		<div class="info__title">
+			<span>Некоторые правила этого QUIZ:</span>
+		</div>
+		<ul class="info__list">
+			<li class="info">1. У вас есть только <b>15 секунд</b> на один вопрос</li>
+			<li class="info">2. После выбора ответа, поменять его нельзя</li>
+			<li class="info">3. Вы не можете выбрать ответ после окончания времени</li>
+			<li class="info">4. Вы не можете выйти из игры, пока не закончились вопросы</li>
+			<li class="info">5. Количество очков равно вашим правильным ответам</li>
+		</ul>
+		<div class="buttons">
+			<button class="quit">Выйти из QUIZ</button>
+			<button class="continue">Продолжить</button>
+		</div>
+	</div>
+
+<!-- ИГРА  -->
+	<div class="quiz__box">
+
+		<header>
+			<div class="title">Awesome QUIZ App</div>
+			<div class="timer">
+				<div class="timer__text">Осталось сек.</div>
+				<div class="timer__sec">15</div>
+			</div>
+			<div class="timer__line"></div>
+		</header>
+
+		<section>
+			<div class="question__text">
+				<span>What does HTML stand for?</span>
+			</div>
+			<ul class="option__list">
+				<!-- <li class="option">
+					<span>Hyper Text Preprocessor</span>
+					<i class="icon check"><img src="/img/check.svg"></img></i>
+				</li>
+				<li class="option">
+					<span>Hyper Text Markup Language</span>
+					<i class="icon cross"><img src="/img/cross.svg"></img></i>
+				</li> -->
+	
+				
+			</ul>
+		</section>
+
+		<footer>
+			<div class="total__questions">
+				<!-- <span><p>2</p>из<p>5</p>вопросов</span> -->
+			</div>
+			<button class="next__btn">Следующий вопрос</button>
+		</footer>
+	</div>
+
+<!-- РЕЗУЛЬТАТЫ ИГРЫ -->
+	<div class="result__box">
+		<i class="icon">
+			<img src="/img/star.svg" alt="star">
+		</i>
+		<div class="result__text">
+			Вы завершили игру QUIZ!
+		</div>
+		<div class="score__text">
+			<!-- <span>к сожалению, Вы набрали лишь <p>2</p>из <p>5</p></span> -->
+		</div>
+		<div class="buttons">
+			<button class="restart">Начать заново</button>
+			<button class="quit">Выйти из QUIZ</button>
+		</div>
+	</div>
+
+<script src="/js/questions.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>
